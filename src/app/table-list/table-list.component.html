@@ -1,0 +1,55 @@
+<div class="panel-header panel-header-lg" style="height:200px;">
+  <h1 style="text-align:center;color:white;">View Clients Project</h1>
+</div>
+<div class="main-content">
+ <div class="row">
+   <div class="col-md-12">
+     <div class="card">
+       <div class="card-header">
+         <h4 class="card-title"> Clients Projects</h4>
+         <p *ngIf="showMessage==true" style="color:red; text-align:center;">No Project Started</p>
+
+       </div>
+       <div class="card-body" *ngIf="showdiv==true">
+         <div class="table-responsive">
+           <table class="table">
+             <thead class=" text-primary">
+               <th>
+                Project Name
+               </th>
+               <th>
+                 Location
+               </th>
+               <th>
+                 Renovation Type
+               </th>
+               <th>
+                  
+              </th>
+             </thead>
+             <tbody>
+              <tr *ngFor="let s of post1 let j=index;"  >
+        
+                 <td>
+                  Home Renovation Project
+                 </td>
+                 <td>
+                 Street Address: {{s.streetAddress}}  Apt:{{s.Apt}}  Zip:{{s.zip}}
+                 </td>
+                 <td>
+                  {{s.renovation}}
+                </td>
+                <td>
+                  <button class="btn btn-secondary" (click)="viewprojects(s._id)">
+                    view project detail
+                  </button>
+                </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>

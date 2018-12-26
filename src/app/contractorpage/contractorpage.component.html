@@ -1,0 +1,162 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+    <link rel="stylesheet" href="/assets/js/swiper/css/swiper.min.css">    
+    <title>Mistari | Construction, Building HTML Template</title>
+  </head>
+  
+  <body>
+  
+    <div class="top-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+              <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+            <ul>
+              <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+              <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+          </div>
+          <div class="col-lg-9 col-md-12 text-center text-lg-right">
+            <ul>
+              <li class="pr-4">
+                <div class="icon"><i class="fa fa-clock"></i></div>
+                <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+              </li>
+              <li class="pr-4">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <p>4578 Marmora Road,<br>Glasgow</p>
+              </li>
+              <li>
+                <div class="button pr-4">
+                  <a class="no-fill-color" (click)="logout()" style="cursor:pointer;"><i aria-hidden="true" class="fa"></i>Log Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+              <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link" href="/index-01">Home</a>
+              
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/aboutus">About us</a>
+                  
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                      <li><a class="dropdown-item" href="/services">Services 02</a></li>
+  
+                    </ul>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10%; margin-left:10%; width:80%; background-color:#eff0f2;
+-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);">
+  <!-- <div class="col-sm-12" style="text-align:center;">
+    Register
+  </div> -->
+
+  <div class="col-sm-12">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-12" style="text-align:center;">
+          <h1>Hello, {{username}}!</h1>
+      <p class="lead">You have successfully logged in to Sweeten as <b>{{usertype}}</b>.</p>
+          <p *ngIf="showMessage" style="color:red;">You Have Not Been Assigned Any Project</p>
+          </div>
+        </div>
+        </div>
+  </div>
+
+  <div *ngIf="showdiv" class="table-responsive" style="width:100%;"> 
+
+    <table class="table">
+      <thead  class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th>Project Title</th>
+          <th>Location</th>
+           <th>Renovation Type</th>
+           <th></th>
+           <th></th>
+
+    
+        </tr>
+      </thead>
+      <tbody  *ngFor="let c of projectid1 let i=index;"  >
+        <tr>
+            <td>
+               {{i+1}}
+               </td>
+            <td>
+                Home Renovation Project
+               </td>
+               <td>
+               Street Address: {{appinfo[i].streetAddress}}  Apt:{{appinfo[i].Apt}}  Zip:{{appinfo[i].zip}}
+               </td>
+               <td>
+                {{appinfo[i].renovation}}
+              </td>
+               <td>
+                 <button class="btn btn-secondary" (click)="viewprojects(appinfo[i]._id)">
+                   view project detail
+                 </button>
+               </td>
+               <td>
+                  <button class="btn btn-secondary" (click)="viewtodolist(appinfo[i]._id)">
+                    view Todolist
+                  </button>
+                </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+</div>
+

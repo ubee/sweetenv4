@@ -1,0 +1,193 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+  <title>Mistari | Construction, Building HTML Template</title>
+</head>
+<body>
+  <!-- PRELOADER STARTS
+    ========================================================================= --> 
+  
+  <!-- /. PRELOADER ENDS
+    ========================================================================= -->
+      <!-- HEADER STARTS
+    ========================================================================= -->
+  <div class="top-contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+            <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+          <ul>
+            <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+            <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+        </div>
+        <div class="col-lg-9 col-md-12 text-center text-lg-right">
+          <ul>
+            <li class="pr-4">
+              <div class="icon"><i class="fa fa-clock"></i></div>
+              <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+            </li>
+            <li class="pr-4">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <p>4578 Marmora Road,<br>Glasgow</p>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a style="margin-left:50px;" class="no-fill-color" href="/login"><i aria-hidden="true" class="fa"></i>Login</a>
+              </div>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a class="no-fill-color" href="/register"><i aria-hidden="true" class="fa"></i>Signup</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+            <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link" href="/index-01">Home</a>
+            
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/aboutus">About us</a>
+                
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                    <li><a class="dropdown-item" href="/services">Services 02</a></li>
+
+                  </ul>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/register">Sign Up</a>
+                    </li>
+              </ul>
+              <div class="search column my-2 my-lg-0">
+                <div id="myOverlay" class="search-overlay">
+                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                  <div class="overlay-content">
+                    <form>
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                </div>
+                <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+<div  id="logindiv" class="row" style=" padding:20px; background-color:#eff0f2;
+-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2); width:50%; margin-left:30%;">
+  <div class="col-sm-12" style="text-align:center; font-size:larger;">
+    <br>
+  </div>
+
+  <div class="col-sm-12">
+    <form [formGroup]="loginForm">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+      <div *ngIf="loginForm.get('email').touched && loginForm.get('email').invalid">
+        <div *ngIf="loginForm.get('email').hasError('required')">
+          <p  style="color:red"> *Email is Required</p>
+         </div>
+        <div *ngIf="loginForm.get('email').hasError('email')">
+         <p  style="color:red"> *Invalid email</p>
+        </div>
+    </div>
+      <div class="form-group">
+        <label for="passwordInput">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="passwordInput" aria-describedby="passHelp" placeholder="password">
+        <small id="passHelp" class="form-text text-muted"></small>
+      </div>
+
+      <div *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid">
+        <div *ngIf="loginForm.get('password').hasError('required')">
+         <p style="color:red"> *Password is Required</p>
+        </div>
+        <div *ngIf="loginForm.get('password').hasError('maxlength')">
+         <p style="color:red"> *Enter less than 12 digits</p>
+        </div>
+        <div *ngIf="loginForm.get('password').hasError('minlength')">
+          <p style="color:red"> *Enter more than 8 digits</p>
+         </div>
+    </div>
+    <div class="form-group">
+        <label>Login as:
+          </label>
+          <div class="form-group">
+              <select style="height:45px" formControlName="type"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp">
+                <option value=null>Select Type..</option>
+                <option  *ngFor="let r of type">{{r}}</option>
+                </select>
+            </div>
+           
+      </div>
+      <div *ngIf="loginForm.get('type').touched && loginForm.get('type').invalid">
+          <div *ngIf="loginForm.get('type').hasError('required')">
+           <p  style="color:red"> *Type is Required</p>
+          </div>
+      </div>
+
+      <div class="row form-group" style="text-align:center;">
+        <div class="col-sm-3">
+             <br>
+        </div>
+          <div class="col-sm-6 button" style="cursor: pointer;">
+            <a class="no-fill-color" (click)="login()"><i aria-hidden="true" class="fa"></i>LOGIN</a>
+          </div>
+          <div class="col-sm-3">
+
+          </div>
+      </div>
+    </form>
+  </div>
+</div>

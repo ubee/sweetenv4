@@ -1,0 +1,212 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+  <title>Mistari | Construction, Building HTML Template</title>
+</head>
+<body>
+  <!-- PRELOADER STARTS
+    ========================================================================= --> 
+  
+  <!-- /. PRELOADER ENDS
+    ========================================================================= -->
+      <!-- HEADER STARTS
+    ========================================================================= -->
+  <div class="top-contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+            <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+          <ul>
+            <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+            <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+        </div>
+        <div class="col-lg-9 col-md-12 text-center text-lg-right">
+          <ul>
+            <li class="pr-4">
+              <div class="icon"><i class="fa fa-clock"></i></div>
+              <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+            </li>
+            <li class="pr-4">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <p>4578 Marmora Road,<br>Glasgow</p>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a style="margin-left:50px;" class="no-fill-color" href="/login"><i aria-hidden="true" class="fa"></i>Login</a>
+              </div>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a class="no-fill-color" href="/register"><i aria-hidden="true" class="fa"></i>Signup</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+            <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link" href="/index-01">Home</a>
+            
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/aboutus">About us</a>
+                
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                    <li><a class="dropdown-item" href="/services">Services 02</a></li>
+
+                  </ul>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/register">Sign Up</a>
+                    </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  <div class="row" style="margin-top:5%; padding:4px; background-color:#eff0f2;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2); width:50%; margin-left:25%;">
+<div class="col-sm-12" style="text-align:center; font-size:30px">
+ <br>
+  </div>
+  <div class="col-sm-12">
+    <form [formGroup]="registerForm">
+        <div *ngIf="showerror">
+            <p style="color:red; text-align:center" >Email Already Registered</p>
+          </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+      <div *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid">
+        <div *ngIf="registerForm.get('email').hasError('required')">
+          <p  style="color:red"> *Email is Required</p>
+         </div>
+        <div *ngIf="registerForm.get('email').hasError('email')">
+         <p  style="color:red"> *Invalid email</p>
+        </div>
+    </div>
+      <div class="form-group">
+          <label for="exampleInputUsername">Username</label>
+          <input formControlName="username" type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp" placeholder="username">
+          <small id="userHelp" class="form-text text-muted"></small>
+      </div>
+      <div *ngIf="registerForm.get('username').touched && registerForm.get('username').invalid">
+        <div *ngIf="registerForm.get('username').hasError('required')">
+         <p style="color:red"> *User Name is Required </p>
+        </div>
+        <div *ngIf="registerForm.get('username').hasError('pattern')">
+         <p  style="color:red">  *User Name is Invalid</p>
+        </div>
+    </div>
+      <div class="form-group">
+        <label for="passwordInput">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="passwordInput" aria-describedby="passHelp" placeholder="password">
+        <small id="passHelp" class="form-text text-muted"></small>
+      </div>
+      <div *ngIf="registerForm.get('password').touched && registerForm.get('password').invalid">
+        <div *ngIf="registerForm.get('password').hasError('required')">
+         <p  style="color:red"> *Password is Required</p>
+        </div>
+        <div *ngIf="registerForm.get('password').hasError('maxlength')">
+         <p  style="color:red"> *Enter less than 12 digits</p>
+        </div>
+        <div *ngIf="registerForm.get('password').hasError('minlength')">
+          <p  style="color:red"> *Enter more than 8 digits</p>
+         </div>
+    </div>
+      <div class="form-group">
+          <label for="CpasswordInput">Confirm Password</label>
+          <input formControlName="cpass" type="password" class="form-control" id="CpasswordInput" aria-describedby="CpassHelp" placeholder="password">
+          <small id="CpassHelp" class="form-text text-muted"></small>
+        </div>
+        <div *ngIf="registerForm.get('cpass').touched && registerForm.get('cpass').invalid">
+          <div *ngIf="registerForm.get('cpass').hasError('required')">
+           <p  style="color:red"> *Password is Required</p>
+          </div>
+          <div *ngIf="registerForm.get('cpass').hasError('maxlength')">
+           <p  style="color:red"> *Enter less than 12 digits</p>
+          </div>
+          <div *ngIf="registerForm.get('cpass').hasError('minlength')">
+            <p  style="color:red"> *Enter more than 8 digits</p>
+           </div>
+      </div>
+      <div class="form-group">
+        <label>Register as:
+          </label>
+          <div class="form-group">
+              <select style="height:45px" formControlName="type"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp">
+                <option value=null>Select Type..</option>
+                <option  *ngFor="let r of type">{{r}}</option>
+                </select>
+            </div>
+            <div *ngIf="registerForm.get('type').touched && registerForm.get('type').invalid">
+              <div *ngIf="registerForm.get('type').hasError('required')">
+               <p  style="color:red"> *Type is Required</p>
+              </div>
+          </div>
+      </div>
+      <br>
+        <div class="row form-group" style="text-align:center;">
+            <div class="col-sm-3">
+    <br>
+            </div>
+             
+              
+              <div class="col-sm-6 button" style="cursor: pointer;">
+                <a class="no-fill-color"  (click)="register()"><i aria-hidden="true" class="fa"></i>SIGNUP</a>
+              </div>
+              <div class="col-sm-3">
+    
+              </div>
+          </div>
+    </form>
+  </div>
+</div>

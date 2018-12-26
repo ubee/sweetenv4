@@ -1,0 +1,228 @@
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+    <title>Mistari | Construction, Building HTML Template</title>
+  </head>
+  <body>
+  
+    <div class="top-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+              <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+            <ul>
+              <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+              <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+          </div>
+          <div class="col-lg-9 col-md-12 text-center text-lg-right">
+            <ul>
+              <li class="pr-4">
+                <div class="icon"><i class="fa fa-clock"></i></div>
+                <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+              </li>
+              <li class="pr-4">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <p>4578 Marmora Road,<br>Glasgow</p>
+              </li>
+              <li>
+                <div class="button pr-4">
+                  <a class="no-fill-color" href="/login"><i aria-hidden="true" class="fa"></i>Login</a>
+                </div>
+              </li>
+              <li>
+                <div class="button pr-4">
+                  <a class="no-fill-color" href="/register"><i aria-hidden="true" class="fa"></i>Signup</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+              <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link" href="/index-01">Home</a>
+              
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/aboutus">About us</a>
+                  
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                      <li><a class="dropdown-item" href="/services">Services 02</a></li>
+  
+                    </ul>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/user">Dashboard</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    <section class="contact-us form light-grey-bg" style="width:70%; margin-left:200px; padding:10px;">
+			<!-- Send a Message Starts -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="herotext text-center" >
+              <h2 style="font-size:x-large;">Scope Of Project! </h2>
+              <h1>What you want to do.</h1>
+            </div>
+						<div class="line"></div>
+						<form [formGroup]="editrenovationForm" >
+                  
+
+                  <div class="form-group" style="margin-top:50px">
+                      <label style="font-weight:bold" for="closingdate">What would you like to renovate?
+                        </label>
+                        <div class="form-group">
+                            <select formControlName="renovation"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp" [value]="post2.reno" [(ngModel)]="post2.reno" >
+                                <option (click)="addSkills()" *ngFor="let r of renovation">{{r}}</option>
+                    
+                              </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="font-weight:bold" for="desc">In a sentence or two, what's the reason you're renovating?</label>
+                            <textarea formControlName="reason" type="text" class="form-control" id="desc" placeholder="Design Updated"   [(ngModel)]="post2.reason"></textarea>
+                          </div>
+
+                          <div class="form-group">
+                              <label style="font-weight:bold" for="desc">What's your project scope?
+                                </label>
+                              <textarea formControlName="scope" type="text" class="form-control" id="desc" placeholder="Kitchen e.t.c"  [(ngModel)]="post2.scope"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label style="font-weight:bold" for="desc">What's the total square footage of your renovation?
+                                  </label>
+                                <input formControlName="squarefoot" type="text" class="form-control" id="desc"  placeholder="1000 SQUARE FEET" [(ngModel)]="post2.squarefoot">
+                              </div>
+
+                              <div class="form-group">
+                                  <label style="font-weight:bold" for="desc">How premium would you like your materials and finishes to be?
+                                    </label>
+                                    <div class="form-group">
+                                        <select formControlName="premium"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp" [value]="post2.premium" [(ngModel)]="post2.premium" >
+                                            <option  *ngFor="let r of premium">{{r}}</option>
+                                
+                                          </select>
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label style="font-weight:bold" for="desc">What style are you going for?
+
+                                      </label>
+                                      <div class="form-group">
+                                          <select formControlName="style"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp" [value]="post2.style" [(ngModel)]="post2.style">
+                                              <option  *ngFor="let r of styles">{{r}}</option>
+                                  
+                                            </select>
+                                        </div>
+                                  </div>
+                                <div class="form-group">
+                                    <label style="font-weight:bold" for="desc">What services are you hiring for?
+                                      </label>
+                                      <div class="form-group">
+                                          <select formControlName="service"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp"  [value]='post2.service' [(ngModel)]="post2.service">
+                                              <option  *ngFor="let r of service">{{r}}</option>
+                                  
+                                            </select>
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label style="font-weight:bold" for="desc">Are you working with an architect or designer to prepare drawings for this project?
+
+                                        </label>
+                                        <div class="form-group">
+                                            <select formControlName="question"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp"  [value]="post2.question" [(ngModel)]="post2.question">
+                                                <option  *ngFor="let r of question">{{r}}</option>
+                                    
+                                              </select>
+                                          </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label style="font-weight:bold" for="desc">If available, please provide a link to your architectural drawings (optional)
+                                          </label>
+                                        <input formControlName="url" type="text" class="form-control" id="desc"  placeholder="www.yahoo.com"  [(ngModel)]="post2.url">
+                                      </div>
+
+
+                                  <div class="form-group">
+                                      <label style="font-weight:bold" for="desc">What's your overall budget range?
+
+                                        </label>
+                                        <div class="row">
+                                          <div class="col-sm-4">
+                                      <input formControlName="budget1" type="text" class="form-control" id="desc"   [(ngModel)]="post2.budget1">
+                                    </div>
+                                    _
+                                    <div class="col-sm-4">
+                                        <input formControlName="budget2" type="text" class="form-control" id="desc"   [(ngModel)]="post2.budget2">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                  <div class="form-group">
+                                      <label style="font-weight:bold" for="desc">What helped you set your budget?
+
+                                        </label>
+                                        <div class="form-group">
+                                            <select formControlName="help"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp" [value]="post2.help" [(ngModel)]="post2.help">
+                                                <option  *ngFor="let r of help">{{r}}</option>
+                                    
+                                              </select>
+                                          </div>
+                                    </div>
+                                    <div class="form-group button" style="margin-left:700px; margin-top:30px;">
+                                        <a class="no-fill-color"  (click)="updatepost2()"><i aria-hidden="true" class="fa"></i>NEXT</a>
+                                      </div>
+								
+						</form>
+					</div>
+				</div>
+			</div>

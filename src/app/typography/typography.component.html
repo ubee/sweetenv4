@@ -1,0 +1,72 @@
+<div class="panel-header panel-header-lg" style="height:200px;">
+  <h1 style="text-align:center;color:white;">View All Contractors</h1>
+  
+</div>
+<div class="main-content">
+ <div class="row">
+   <div class="col-md-12">
+     <div class="card">
+       <div class="card-header">
+         <h4 class="card-title"> Contractors</h4>
+         <p *ngIf="showMessage==true" style="color:red; text-align:center;">No Registered Contractors</p>
+
+       </div>
+       <div class="card-body" *ngIf="showdiv==true">
+         <div class="table-responsive">
+           <table class="table">
+             <thead class=" text-primary">
+               <th>
+                User Name
+               </th>
+               <th>
+                 Email
+               </th>
+               <th>
+                 Rating
+               </th>
+               <th>
+              
+              </th>
+
+             </thead>
+             <tbody *ngFor="let c of clients; let i=index;">
+               <tr>
+                 <td>
+                   {{c.username}}
+                 </td>
+                 <td>
+                   {{c.email}}
+                 </td>
+                 <td>  
+            
+                  <div class="rating">
+                    <input type="radio" value="5" [checked]="c.rating===5" />
+                    <label title="Rocks!" (click)='onClick(5,c._id)'>5 stars</label>
+                  
+                    <input type="radio" value="4" [checked]="c.rating===4" />
+                    <label title="Pretty good" (click)='onClick(4,c._id)'>4 stars</label>
+                  
+                    <input type="radio" value="3" [checked]="c.rating===3" />
+                    <label title="Meh" (click)='onClick(3,c._id)'>3 stars</label>
+                  
+                    <input type="radio"  value="2" [checked]="c.rating===2" />
+                    <label title="Kinda bad" (click)='onClick(2,c._id)'>2 stars</label>
+                  
+                    <input type="radio" value="1" [checked]="c.rating===1" />
+                    <label title="Sucks big time" (click)='onClick(1,c._id)'>1 star</label>
+                  </div>
+                </td>
+                 <td>
+                   <button class="btn btn-secondary" (click)="viewproject(c._id)">
+                     View Assigned Projects
+                   </button>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>

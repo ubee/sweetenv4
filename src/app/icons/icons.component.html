@@ -1,0 +1,61 @@
+<div class="panel-header panel-header-sm" style="height:200px;">
+    <h1 style="text-align:center;color:white;">View All Project</h1>
+</div>
+<div class="main-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title"> All Projects</h4>
+            <p *ngIf="showMessage==true" style="color:red; text-align:center;">No Home Renovation Projects</p>
+
+          </div>
+          <div class="card-body" *ngIf="showdiv==true">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                  <th>
+                   Project Name
+                  </th>
+                  <th>
+                    Location
+                  </th>
+                  <th>
+                    Renovation Type
+                  </th>
+                  <th>
+                     
+                 </th>
+                </thead>
+                <tbody  *ngFor="let c of clientsProject1 let i=index;"  >
+                  <tr>
+            
+                         
+                    <td>
+                     Home Renovation Project
+                    </td>
+                    <td>
+                    Street Address: {{c.streetAddress}}  Apt:{{c.Apt}}  Zip:{{c.zip}}
+                    </td>
+                    <td>
+                     {{c.renovation}}
+                   </td>
+                    <td>
+                      <button class="btn btn-secondary" (click)="viewprojects(c._id)">
+                        view project detail
+                      </button>
+                    </td>
+                    <td>
+                      <button class="btn btn-secondary" (click)="Assign(c._id,c.userid)" [disabled]="c.project_status =='assigned'|| c.status=='pending'" >
+                        Assign Project
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>

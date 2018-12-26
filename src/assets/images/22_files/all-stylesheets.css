@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Mistari - Construction & Building Responsive HTML template
+Version:	1.1
+Last change:	01/August/2018
+Assigned to:	alia
+Primary use:	Construction & Building Template
+ 
+-------------------------------------------------------------------*/
+
+/* Fonts Lora, Open Sans, Poppins */
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,600,700|Poppins:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,800|Ubuntu:300,300i,400,400i,500,500i,700,700i');
+
+/* Bootstrap v4.1.1 */
+@import url("bootstrap.min.css");
+
+/* Main Stylesheet */
+@import url("stylesheet.css");
+
+/* spinkit */
+@import url("spinkit/spinkit.css");
+
+/* REVOLUTION STYLE SHEETS */
+@import url("../revolution/css/settings.css");
+@import url("../revolution/css/layers.css");
+@import url("../revolution/css/navigation.css");
+@import url("../revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css");
+@import url("../revolution/fonts/font-awesome/css/font-awesome.css");
+
+/* FontAwesome */
+@import url("../fonts/font-awesome/css/fontawesome-all.css");
+
+/* Magnific Popup core CSS file */
+@import url("../js/magnific-popup/magnific-popup.css");
+
+/* Owl Carousel */
+@import url("../js/owl-carousel/owl.carousel.css");
+@import url("../js/owl-carousel/owl.theme.default.min.css");
+
+/* Simple Line Icons */
+@import url("../fonts/simple-line-icons/css/simple-line-icons.css");

@@ -1,0 +1,65 @@
+<div class="panel-header panel-header-sm" style="height:200px;">
+  <h1 style="text-align:center;color:white;">Select Contractor</h1>
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Contractors</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                 User Name
+                </th>
+                <th>
+                  Email
+                </th>
+                <th>
+                Rating
+                </th>
+                <th>
+
+                </th>
+              </thead>
+              <tbody *ngFor="let c of contractor; let i=index;">
+                <tr>
+                  <td>
+                    {{c.username}}
+                  </td>
+                  <td>
+                    {{c.email}}
+                  </td>
+                  <fieldset class="rating">
+                      <input type="radio"    value="5" [checked]="c.rating==5" />
+                      <label title="Rocks!">5 stars</label>
+                    
+                      <input type="radio"  value="4" [checked]="c.rating==4"   />
+                      <label title="Pretty good">4 stars</label>
+                  
+                      <input type="radio"  value="3" [checked]="c.rating==3" />
+                      <label title="Meh">3 stars</label>
+                    
+                      <input type="radio"  value="2" [checked]="c.rating==2" />
+                      <label title="Kinda bad">2 stars</label>
+                    
+                      <input type="radio" value="1" [checked]="c.rating==1" />
+                      <label title="Sucks big time">1 star</label>
+                    </fieldset>
+                  <td>
+                    <button class="btn btn-secondary" (click)="assignproject(c._id,c.email)">
+                      Select Contractor
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>

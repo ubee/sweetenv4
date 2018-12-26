@@ -1,0 +1,72 @@
+<div class="panel-header panel-header-sm" style="height:200px;">
+  <h1 style="text-align:center;color:white;">View All Project</h1>
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> All Projects</h4>
+          <p *ngIf="showMessage==true" style="color:red; text-align:center;">No Business Renovation Projects</p>
+        </div>
+        <div class="card-body" *ngIf="showdiv==true">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                 Project Name
+                </th>
+                <th>
+                  Location
+                </th>
+                <th>
+                  Size
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  Deadline
+                </th>
+                <th>
+                   
+               </th>
+              </thead>
+              <tbody >
+                <tr *ngFor="let s of projects let i=index;"  >
+            
+                         
+                  <td>
+                   {{s.projectname}}
+                  </td>
+                  <td>
+                  Street Address: {{s.streetAddress}}  Apt:{{s.Apt}}  Zip:{{s.zip}}
+                  </td>
+                  <td>
+                    {{s.squarefoot}} squarefoot
+                  </td>
+                  <td>
+                    {{s.startdate}}
+                  </td>
+                  <td>
+                   {{s.deadline}}
+                 </td>
+                  <td>
+                    <button class="btn btn-secondary" (click)="viewdetail(s._id)">
+                      view project detail
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-secondary" (click)="Assign(s._id)">
+                      Assign Project
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>

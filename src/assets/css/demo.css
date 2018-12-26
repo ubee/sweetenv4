@@ -1,0 +1,454 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Mistari - Construction & Building Responsive HTML template
+Version:	1.1
+Last change:	01/August/2018
+Assigned to:	alia
+Primary use:	Construction & Building Template
+ 
+-------------------------------------------------------------------*/
+.inner-banner {
+    margin-top: 0px;
+}
+.overlap{
+	position:absolute;
+	top:-80px;
+	z-index:9999;
+}
+.d-inner {
+		margin-top: -1px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		position:relative;
+	}
+ul.features{
+	padding:0px;
+	margin:0px;
+}
+ul.features li{ 
+	display:inline-block;
+	color:#fff;
+	font-size:18px;
+	text-transform:uppercase;
+	padding-left:8px;
+	padding-right:8px;
+}	
+
+ul.features li::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "-";
+}
+.portfolio {
+    padding-top: 0px;
+    padding-bottom: 90px;
+	
+}
+a:hover,
+a:active {
+    text-decoration: none;
+}
+.d-herotext {	
+    text-align: center;
+    padding-bottom: 60px;
+}
+.d-herotext h1 {
+	font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+	text-transform:uppercase;
+    color: #fff;
+	font-weight:700;
+	text-align:center;
+
+}
+.d-herotext h2 {
+	font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+	text-transform:uppercase;
+    color: #fff;
+	font-weight:600;
+}
+.d-herotext h3 {
+    font-size: 24px;
+    color: #fff;
+	text-transform:uppercase;
+}
+.d-herotext .line {
+    content: '';
+    width: 100px;
+    height: 2px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+	margin-bottom: 30px;
+    background-color: #fff;
+}
+.demopage-preview {
+    padding: 0px 0px 0;
+}
+.demopage-preview > div {
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+}
+.demopage-preview_item {
+    display: block;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    background-size: contain;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.16);
+}
+.demopage-img {
+    background-position: 0 0;
+    transition: all 1s;
+    background-size: cover;
+}
+.demopage-img:hover {
+    background-position: 0 -100px;
+}
+.demopage-img_1 {
+    background-image: url("../images/demo/preview/1.jpg");
+}
+.demopage-img_2 {
+    background-image: url("../images/demo/preview/2.jpg");
+}
+.demopage-img_3 {
+    background-image: url("../images/demo/preview/3.jpg");
+}
+.demopage-img_4 {
+    background-image: url("../images/demo/preview/4.jpg");
+}
+.demopage-img_5 {
+    background-image: url("../images/demo/preview/5.jpg");
+}
+.demopage-img_6 {
+    background-image: url("../images/demo/preview/6.jpg");
+}
+.demopage-img_7 {
+    background-image: url("../images/demo/preview/7.jpg");
+}
+.demopage-img_8 {
+    background-image: url("../images/demo/preview/8.jpg");
+}
+.demopage-img_9 {
+    background-image: url("../images/demo/preview/9.jpg");
+}
+.demopage-img_10 {
+    background-image: url("../images/demo/preview/10.jpg");
+}
+.demopage-img_11 {
+    background-image: url("../images/demo/preview/11.jpg");
+}
+.demopage-img_12 {
+    background-image: url("../images/demo/preview/12.jpg");
+}
+.demopage-img_13 {
+    background-image: url("../images/demo/preview/13.jpg");
+}
+.demopage-img_14 {
+    background-image: url("../images/demo/preview/14.jpg");
+}
+.demopage-img_15 {
+    background-image: url("../images/demo/preview/15.jpg");
+}
+.demopage-h-default_01 {
+    background-image: url("../images/demo/preview/home-default/1.jpg");
+}
+.demopage-h-default_02 {
+    background-image: url("../images/demo/preview/home-default/2.jpg");
+}
+.demopage-h-default_03 {
+    background-image: url("../images/demo/preview/home-default/3.jpg");
+}
+.demopage-h-cols_01 {
+    background-image: url("../images/demo/preview/home-cols/1.jpg");
+}
+.demopage-h-cols_02 {
+    background-image: url("../images/demo/preview/home-cols/2.jpg");
+}
+.demopage-h-cols_03 {
+    background-image: url("../images/demo/preview/home-cols/3.jpg");
+}
+.demopage-h-cols_04 {
+    background-image: url("../images/demo/preview/home-cols/4.jpg");
+}
+.demopage-h-cols_05 {
+    background-image: url("../images/demo/preview/home-cols/5.jpg");
+}
+.demopage-h-cols_06 {
+    background-image: url("../images/demo/preview/home-cols/6.jpg");
+}
+.demopage-h-cols_07 {
+    background-image: url("../images/demo/preview/home-cols/7.jpg");
+}
+/* ---------------------------------------------------------------------- PORTFOLIO STARTS ------------------ */
+
+#options {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    margin-bottom: 20px;
+}
+#options ul {
+    width: auto;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#options ul li {
+    display: inline-block;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#options ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    color: #666666;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#options ul li a:link {
+    color: #666666;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#options ul li:hover a,
+#options ul li a.selected {
+    color: #019cde;
+    padding-bottom: 6px;
+    text-decoration: none;
+}
+#portfolio ul li {
+    list-style-type: none;
+}
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+.portfolio-grid figure {
+    float: left;
+    width: 30%;
+    height: auto!important;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.portfolio-grid figure img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px 40px 30px -24px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 40px 30px -24px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 40px 30px -24px rgba(0, 0, 0, 0.28);
+    /*box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.16);*/
+}
+.portfolio-grid.nospace figure.item {
+    padding: 0px;
+    text-align: center;
+}
+.portfolio-grid figure.item {
+    margin-bottom: 1px;
+    text-align: center;
+}
+.portfolio-grid figure.item h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	padding-top:12px;
+	font-weight:bold
+}
+.portfolio-grid .item-w2 {
+    width: 60%
+}
+.portfolio-grid .item-h2 {
+    height: auto!important
+}
+.portfolio-grid .picture {
+    background-color: #000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+}
+.portfolio-grid .item:hover img {
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.portfolio-grid .picture .text-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+.portfolio-grid .picture:hover .text-overlay {
+    opacity: 1
+}
+.portfolio-grid .picture .text-overlay a {
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+.portfolio-grid .picture .text-overlay a:hover {
+    letter-spacing: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-style: none;
+}
+/* ---------------------------------------------------------------------- PORTFOLIO ENDS ------------------ */
+/* ---------------------------------------------------------------------- FOOTER STARTS ------------------ */
+section.demo-footer .row1 {
+    background-color: #252525;
+	text-align:center;
+    padding-top: 70px;
+	padding-bottom: 70px;
+}
+section.demo-footer .row1 h1{
+	font-size:24px;
+	color:#fff;
+	letter-spacing:2px;
+}
+section.demo-footer .row1 .btn{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+section.demo-footer .row1 .btn a{	
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 700;
+	color:rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 10px 40px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+section.demo-footer .row1 .btn a:hover{
+	color:rgba(0, 0, 0, 1);
+	background-color: rgba(255, 255, 255, 1);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/* ---------------------------------------------------------------------- FOOTER STARTS ------------------ */
+@media (max-width: 1199px) {
+    .demopage-title {
+        margin-bottom: 0;
+    }
+    ul.demopage-help_list {
+        padding: 0;
+    }
+    ul.demopage-help_list li {
+        width: 100%;
+    }
+    ul.demopage-help_list li a {
+        text-align: center;
+        width: 100%;
+    }
+    ul.demopage-help_list li {
+        border-left: 1px solid #eee;
+    }
+    ul.demopage-help_list li:first-child {
+        border-bottom: 1px solid #eee;
+    }
+}
+@media (max-width: 767px) {
+    .portfolio {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .d-herotext .line {
+        content: '';
+        width: 100px;
+        height: 2px;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+		margin-bottom:30px;
+    }
+    #options {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+	.d-inner {
+		margin-top: -1px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+    .demopage-preview {
+        padding: 20px 0 0;
+    }
+    .d-herotext h1 {
+        font-size: 50px;       
+    }
+    .d-herotext h2 {
+        font-size: 22px;       
+    }
+	.d-herotext h3 {
+        font-size: 18px;       
+    }
+}

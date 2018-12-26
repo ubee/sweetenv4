@@ -1,0 +1,21 @@
+button{
+    background-color:#3390FF
+}
+table {
+    font-family: arial, sans-serif;
+    background-color:white;
+
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color:gray;
+}
+
+
+/*a.ex2:hover, a.ex2:active, a.ex2:visited, a.ex2:link {text-decoration:none;}*/
+

@@ -1,0 +1,240 @@
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+  <title>Mistari | Construction, Building HTML Template</title>
+</head>
+<body>
+
+  <div class="top-contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+            <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+          <ul>
+            <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+            <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+        </div>
+        <div class="col-lg-9 col-md-12 text-center text-lg-right">
+          <ul>
+            <li class="pr-4">
+              <div class="icon"><i class="fa fa-clock"></i></div>
+              <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+            </li>
+            <li class="pr-4">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <p>4578 Marmora Road,<br>Glasgow</p>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a class="no-fill-color" href="/login"><i aria-hidden="true" class="fa"></i>Login</a>
+              </div>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a class="no-fill-color" href="/register"><i aria-hidden="true" class="fa"></i>Signup</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+            <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link" href="/index-01">Home</a>
+            
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/aboutus">About us</a>
+                
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                    <li><a class="dropdown-item" href="/services">Services 02</a></li>
+
+                  </ul>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user">Dashboard</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  <section class="contact-us form light-grey-bg" style="width:70%; margin-left:200px; padding:10px;">
+    <!-- Send a Message Starts -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="herotext text-center" >
+            <h2 style="font-size:x-large;">Property
+              </h2>
+            <h1>Details about the building and about you.
+
+              </h1>
+          </div>
+          <div class="line"></div>
+          <form [formGroup]="editrenovationForm" >
+                
+
+                <div class="form-group" style="margin-top:50px">
+                    <label style="font-weight:bold" for="closingdate">What type of property are you renovating in?
+
+                      </label>
+                      <div class="form-group">
+                          <select formControlName="type"  type="text" class="form-control" id="Domain" aria-describedby="DomainHelp" [value]="post3.type" [(ngModel)]="post3.type">
+                              <option *ngFor="let r of renovation">{{r}}</option>
+                  
+                            </select>
+                        </div>
+                      </div>
+
+                        <div class="form-group">
+                            <label style="font-weight:bold" for="desc">What are the current conditions of the spaces you're renovating?
+
+                              </label>
+                            <textarea formControlName="condition" type="text" class="form-control" id="desc"  placeholder="Hasn't been renovated since 1800" [(ngModel)]="post3.condition"></textarea>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-12">
+                                <h4>upload before photos</h4>
+                                <div id="fileSelector">
+                                    <input type="file" name="fileUplaod" id="fileUpload"
+                                    multiple ng2FileSelect [uploader]="uploader">
+                                </div>
+                                <div>
+                                    <div class="row uploadList" *ngFor="let item of uploader.queue">
+                                        <div class="col-sm-4">{{item.file.name}}</div>
+                                        <div class="col-sm-4">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" 
+                                                [ngStyle]="{'width':item.progress+'%'}"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <button type="button" class="btn btn-dark" (click)="item.upload()">Upload</button>
+                                                <button type="button" class="btn btn-danger" (click)="item.remove()">Cancel</button>
+                                        </div>
+                                    </div>                        
+                                </div>
+                                <div class="row" *ngIf="uploader?.queue?.length > 0">
+                                        <button type="button" class="btn btn-primary" (click)="uploader.uploadAll()">Upload All</button>
+                                </div>
+                            </div>                
+                        </div>
+
+                        <div class="row" style="margin-top:15px; margin-bottom:10px;">
+                          <div class="col-sm-12">
+                              <h4>upload inspiration photos</h4>
+                              <div id="fileSelector">
+                                  <input type="file" name="fileUplaod" id="fileUpload"
+                                  multiple ng2FileSelect [uploader]="uploader2">
+                              </div>
+                              <div>
+                                  <div class="row uploadList" *ngFor="let item of uploader2.queue">
+                                      <div class="col-sm-4">{{item.file.name}}</div>
+                                      <div class="col-sm-4">
+                                          <div class="progress">
+                                              <div class="progress-bar bg-success" 
+                                              [ngStyle]="{'width':item.progress+'%'}"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                              <button type="button" class="btn btn-dark" (click)="item.upload()">Upload</button>
+                                              <button type="button" class="btn btn-danger" (click)="item.remove()">Cancel</button>
+                                      </div>
+                                  </div>                        
+                              </div>
+                              <div class="row" *ngIf="uploader2?.queue?.length > 0">
+                                      <button type="button" class="btn btn-primary" (click)="uploader2.uploadAll()">Upload All</button>
+                              </div>
+                          </div>                
+                      </div>
+
+                        
+
+                          <div class="form-group">
+                              <label  style="font-weight:bold">Name</label>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                    <input formControlName="firstname" type="text" class="form-control" id="closingdate"  placeholder="FIRST NAME" [(ngModel)]="post3.firstname">
+        
+                                </div>
+                                <div class="col-sm-6">
+                                    <input formControlName="lastname" type="text" class="form-control" id="closingdate"  placeholder="LAST NAME" [(ngModel)]="post3.lastname">
+        
+                                  </div>
+                               
+                                
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label style="font-weight:bold" for="desc">Phone Number
+
+                                </label>
+                              <input formControlName="number" type="text" class="form-control" id="desc" placeholder="0340-8572643"  [(ngModel)]="post3.number" >
+                            </div>
+
+                        <div class="form-group">
+                            <label style="font-weight:bold" for="desc">
+                                What's your availability for site visits?
+
+                              </label>
+                            <textarea formControlName="available" type="text" class="form-control" id="desc"  placeholder="Weekend before 9pm"  [(ngModel)]="post3.available"></textarea>
+                          </div>
+
+                          <div class="form-group">
+                              <label style="font-weight:bold" for="desc">When do you want to start the project?
+
+                                </label>
+                              <input formControlName="date" type="date" class="form-control" id="desc"  [(ngModel)]="post3.date">
+                            </div>
+                            
+                                  <div class="form-group button" style="margin-left:700px; margin-top:30px;">
+                                      <a class="no-fill-color" (click)="updateproject()"><i aria-hidden="true" class="fa"></i>UPDATE PROJECT</a>
+                                    </div>
+              
+          </form>
+        </div>
+      </div>
+    </div>

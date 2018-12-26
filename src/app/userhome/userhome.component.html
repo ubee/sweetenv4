@@ -1,0 +1,274 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+  <title>Mistari | Construction, Building HTML Template</title>
+</head>
+
+<body>
+
+  <div class="top-contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+            <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+          <ul>
+            <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+            <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+        </div>
+        <div class="col-lg-9 col-md-12 text-center text-lg-right">
+          <ul>
+            <li class="pr-4">
+              <div class="icon"><i class="fa fa-clock"></i></div>
+              <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+            </li>
+            <li class="pr-4">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <p>4578 Marmora Road,<br>Glasgow</p>
+            </li>
+            <li>
+              <div class="button pr-4">
+                <a class="no-fill-color" style="cursor:pointer;" (click)="logout()"><i aria-hidden="true" class="fa"></i>Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+            <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown active">
+                  <a class="nav-link" href="/index-01">Home</a>
+            
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/aboutus">About us</a>
+                
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                    <li><a class="dropdown-item" href="/services">Services 02</a></li>
+
+                  </ul>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+<div class="row" style="margin-top:10%; margin-left:10%; width:80%; background-color:#eff0f2;
+-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);" >
+  <!-- <div class="col-sm-12" style="text-align:center;">
+    Register
+  </div> -->
+
+  <div class="col-sm-12">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-12" style="text-align:center;">
+          <h1>Hello, {{username}}!</h1>
+          <p class="lead">You have successfully logged in to Sweeten as <b>{{usertype}}</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4 button" style="text-align:center;">
+            <a class="no-fill-color" href="/options"><i aria-hidden="true" class="fa" ></i>Start A New Project</a>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      
+        </div>
+  </div>
+
+  <div class="col-sm-12 jumbotron" *ngIf="showdiv">
+      <div class="row">
+          <div class="col-sm-12">
+          <h1  style="text-align:center">My project listing</h1>
+          </div>
+          </div>
+    <div>
+      <div *ngFor="let s of homerenovationdata1; let j=index">
+        <div class="row" >
+        <div class="col-sm-12">
+          <h3>Project Title</h3>
+          <p>Home renovation project</p>
+          <hr style=" width:1000px;">
+          <div class="row">
+            <div class="col-sm-4">
+          <h3>Location:</h3>
+          <p>{{s.streetAddress}}</p>
+          <p>{{s.City}}</p>
+          <p>{{s.State}}</p>
+          <p>{{s.zip}}</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Budget:</h3>
+          <p>{{s.budget1}}_{{s.budget2}}</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Date:</h3>
+          <p>{{s.date}}</p>
+        </div>
+        </div>
+       </div>
+        </div>
+        <div class="row">
+              <div class="col-sm-3 button">
+                  <a class="no-fill-color" style="cursor:pointer;"  (click)="delete(s._id)"><i aria-hidden="true" class="fa"></i>Close Project</a>
+                </div>
+ 
+              <div class="col-sm-3 button">
+                  <a class="no-fill-color" style="cursor:pointer;" (click)="update(s._id)"><i aria-hidden="true" class="fa"></i>Edit Project</a>
+              </div>
+
+              <div class="col-sm-3 button">
+                <a class="no-fill-color" style="cursor:pointer;" (click)="Todolist(s._id)"><i aria-hidden="true" class="fa"></i>Todolist</a>
+            </div>
+
+            <div class="col-sm-3 button">
+              <a class="no-fill-color" style="cursor:pointer;" *ngIf="s.project_status=='assigned'" (click)="contractor(s._id)"><i aria-hidden="true" class="fa"></i>Contractor Details</a>
+          </div>
+
+        </div>
+        <br>
+    </div>
+    
+      </div>
+   
+      
+      
+</div>
+
+<div class="col-sm-12 jumbotron" *ngIf="showdiv2">
+  <div class="row">
+      <div class="col-sm-12">
+      <h1  style="text-align:center;">Business Renovation Projects</h1>
+      </div>
+    </div> 
+    <div *ngFor="let r of BusinessData; let i=index">
+        <div class="row" >
+        <div class="col-sm-12">
+          <h3>Project Title</h3>
+          <p>{{r.projectname}}</p>
+          <hr style=" width:1000px;">
+          <h3>Location:</h3>
+          <p>{{r.streetAddress}}</p>
+          <p>{{r.Apt}}</p>
+          <p>{{r.zip}}</p>
+          <h3>Budget:</h3>
+          <p>{{r.budget1}}_{{r.budget2}}</p>
+
+          <h3>Date:</h3>
+          <p>{{r.deadline}}</p>
+       </div>
+        </div>
+        <div class="row">
+              <div class="col-sm-4 button">
+                  <a class="no-fill-color" style="cursor:pointer;"  (click)="deleteBusiness(r._id)"><i aria-hidden="true" class="fa"></i>Close Project</a>
+                </div>
+ 
+              <div class="col-sm-4 button">
+                  <a class="no-fill-color" style="cursor:pointer;"  (click)="updateBusiness(r._id)"><i aria-hidden="true" class="fa"></i>Edit Project</a>
+              </div>
+
+              <div class="col-sm-4 button">
+                <a class="no-fill-color" style="cursor:pointer;" (click)="Todolist(r._id)"><i aria-hidden="true" class="fa"></i>Todolist</a>
+            </div>
+
+        </div>
+        <br>
+    
+      </div> 
+  
+</div>
+
+
+<div class="col-sm-12 jumbotron" *ngIf="showPending">
+  <div class="row">
+      <div class="col-sm-12">
+      <h1  style="text-align:center;">Pending Projects</h1>
+      </div>
+    </div> 
+    <div *ngFor="let s of pending; let i=index">
+        <div class="row" >
+            <div class="col-sm-12">
+              <h3>Project Title</h3>
+              <p>Home renovation project</p>
+              <hr style=" width:1000px;">
+              <div class="row">
+                <div class="col-sm-4">
+              <h3>Location:</h3>
+              <p>{{s.streetAddress}}</p>
+              <p>{{s.City}}</p>
+              <p>{{s.State}}</p>
+              <p>{{s.zip}}</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Budget:</h3>
+              <p>{{s.budget1}}_{{s.budget2}}</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Date:</h3>
+              <p>{{s.date}}</p>
+            </div>
+            </div>
+           </div>
+            </div>
+        <div class="row" style="margin-left:20%;">
+              <div class="col-sm-6 button">
+                  <a class="no-fill-color" style="cursor:pointer;"  (click)="delete(s._id)"><i aria-hidden="true" class="fa"></i>Close Project</a>
+                </div>
+ 
+              <div class="col-sm-6 button">
+                  <a class="no-fill-color" style="cursor:pointer;" (click)="update(s._id)"><i aria-hidden="true" class="fa"></i>Edit Project</a>
+              </div>
+
+
+        </div>
+        <br>
+      </div> 
+  
+</div>
+
+</div>
+

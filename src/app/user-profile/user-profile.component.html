@@ -1,0 +1,59 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+        <div  *ngFor="let c of post1; let i=index;">
+         <h2>Basic Information</h2>
+         <p>Street Address:{{c.streetAddress}} </p>
+         <p>City:{{c.City}}</p>
+         <p>State:{{c.State}}</p>
+         <p>Renovation type:{{c.renovation}}</p>
+       
+         <div>
+            <h2>Renovation Details</h2>
+            <p>What would you like to renovate? {{c.reno}} </p>
+            <p>Reason for renovation:{{c.reason}}</p>
+            <p>Scope:{{c.scope}}</p>
+            <p>Size: {{c.squarefoot}} squarefoot</p>
+            <p>How premium would you like your materials and finishes to be? {{c.premium}}</p>
+            <p>Style:{{c.style}}</p>
+            <p>Services required:{{c.service}}</p>
+            <p>Budget: {{c.budget1}}-{{c.budget2}}</p>
+            <p>What helped you set your budget? {{c.help}}</p>
+            <p>Are you working with an architect or designer to prepare drawings for this project? {{c.question}}</p>
+            <p>url:{{c.url}}</p>
+            </div>
+            <div>
+                <h2> Personal Details</h2>
+                <p>What type of property are you renovating in? {{c.type}} </p>
+                <p>What are the current conditions of the spaces you're renovating? {{c.condition}}</p>
+                <p>First Name:{{c.firstname}}</p>
+                <p>Last Name:{{c.lastname}}</p>
+                <p>Phone no.:{{c.number}}</p>
+                <p>availabilty:{{c.available}}</p>
+                <p>project starting date:{{c.date}}</p>
+                </div>
+        </div>
+        </div>
+        <hr>
+        <div class="button-container">
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-google-plus-g"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

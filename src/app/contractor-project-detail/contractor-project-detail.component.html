@@ -1,0 +1,156 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/all-stylesheets.css">
+    <link rel="stylesheet" href="/assets/js/swiper/css/swiper.min.css">    
+    <title>Mistari | Construction, Building HTML Template</title>
+  </head>
+  
+  <body>
+  
+    <div class="top-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-3 social-icons text-center text-md-left">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab  fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab  fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fab  fa-skype"></i></a></li>
+              <li><a href="#"><i class="fab  fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-9 col-md-9 phone d-none d-md-block">
+            <ul>
+              <li class="pl-0"><a href="#"><i class="fa fa-envelope pr-2"></i>Mail: info@abc.com</a></li>
+              <li><a href="#"><i class="fa fa-phone pr-2"></i>Call Now: 0800  456  789</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-contact-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="logo"><a href="index.html"><img src="/assets/images/logo/logo.png" alt=""></a></div>
+          </div>
+          <div class="col-lg-9 col-md-12 text-center text-lg-right">
+            <ul>
+              <li class="pr-4">
+                <div class="icon"><i class="fa fa-clock"></i></div>
+                <p>Mon – Fri: 10AM – 7PM;<br>Sat – Sun: 10AM – 3PM</p>
+              </li>
+              <li class="pr-4">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <p>4578 Marmora Road,<br>Glasgow</p>
+              </li>
+              <li>
+                <div class="button pr-4">
+                  <a class="no-fill-color"><i aria-hidden="true" class="fa"></i>Log Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainmenu yamm" id="navigation">
+              <a class="navbar-brand p-2 d-sm-block d-md-block d-lg-none d-xl-none" href="#"><img src="/assets/images/logo/logo-light.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link" href="/index-01">Home</a>
+              
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/aboutus">About us</a>
+                  
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      <li><a class="dropdown-item" href="/services">Services 01</a></li>
+                      <li><a class="dropdown-item" href="/services">Services 02</a></li>
+  
+                    </ul>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/contractorpage">Dashboard</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card-user">
+                <div>
+                  <img src="/assets/images/m.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div  *ngFor="let c of post1; let i=index;">
+                        <h2>Basic Information</h2>
+                        <p>Street Address:{{c.streetAddress}} </p>
+                        <p>City:{{c.City}}</p>
+                        <p>State:{{c.State}}</p>
+                        <p>Renovation type:{{c.renovation}}</p>
+                      
+                        <div>
+                           <h2>Renovation Details</h2>
+                           <p>What would you like to renovate? {{c.reno}} </p>
+                           <p>Reason for renovation:{{c.reason}}</p>
+                           <p>Scope:{{c.scope}}</p>
+                           <p>Size: {{c.squarefoot}} squarefoot</p>
+                           <p>How premium would you like your materials and finishes to be? {{c.premium}}</p>
+                           <p>Style:{{c.style}}</p>
+                           <p>Services required:{{c.service}}</p>
+                           <p>Budget: {{c.budget1}}-{{c.budget2}}</p>
+                           <p>What helped you set your budget? {{c.help}}</p>
+                           <p>Are you working with an architect or designer to prepare drawings for this project? {{c.question}}</p>
+                           <p>url:{{c.url}}</p>
+                           </div>
+                           <div>
+                               <h2> Personal Details</h2>
+                               <p>What type of property are you renovating in? {{c.type}} </p>
+                               <p>What are the current conditions of the spaces you're renovating? {{c.condition}}</p>
+                               <p>First Name:{{c.firstname}}</p>
+                               <p>Last Name:{{c.lastname}}</p>
+                               <p>Phone no.:{{c.number}}</p>
+                               <p>availabilty:{{c.available}}</p>
+                               <p>project starting date:{{c.date}}</p>
+                               </div>
+                       </div>
+                </div>
+                <hr>
+                <div class="button-container">
+                  <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                    <i class="fab fa-google-plus-g"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        

@@ -1,0 +1,129 @@
+<div class="panel-header panel-header-lg" style="background-image: url('assets/img/header.jpg'); background-repeat: no-repeat;background-attachment: fixed;
+">
+   
+</div>
+
+<div class="main-content">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-category">Projects</h5>
+          <h4 class="card-title">Home Renovation</h4>
+        </div>
+        <div class="card-body">
+          <div class="chart-area">
+       <h1 style="text-align:center;margin-top:10%; color:blue">{{counter}}</h1>          </div>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-category">Projects</h5>
+          <h4 class="card-title">Business Renovation</h4>
+        </div>
+        <div class="card-body">
+          <div class="chart-area">  
+              <h1 style="text-align:center;margin-top:10%; color:blue">{{counter2}}</h1>  
+   
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card card-chart" >
+        <div class="card-header ">
+          <h5 class="card-category">Projects</h5>
+          <h4 class="card-title">Total Projects</h4>
+        </div>
+        <div class="card-body">
+          <div class="chart-area">
+              <h1 style="text-align:center;margin-top:10%; color:blue">{{counter+counter2}}</h1>  
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="now-ui-icons ui-2_time-alarm"></i> Last 7 days
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-category">All Persons List</h5>
+              <h4 class="card-title" (click)="navigate1()" style="cursor:pointer;">Clients</h4>
+            </div>
+            <div class="card-body">
+              <div class="table">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                       Email
+                    </th>
+                  </thead>
+                  <tbody *ngFor="let c of clients; let i=index;">
+                      <tr>
+                          <td>
+                            {{c.username}}
+                          </td>
+                          <td>
+                            {{c.email}}
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-category">All Persons List</h5>
+          <h4 class="card-title" (click)="navigate2()" style="cursor:pointer;">Contractors</h4>
+        </div>
+        <div class="card-body">
+          <div class="table">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                  Name
+                </th>
+                <th>
+                  Email
+                </th>        
+              </thead>
+              <tbody *ngFor="let c of contractors; let i=index;">
+                  <tr>
+                      <td>
+                        {{c.username}}
+                      </td>
+                      <td>
+                        {{c.email}}
+                      </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
