@@ -29,7 +29,10 @@ export class UserService {
   public AssignBPId;
   public contractor_detail_id;
 
-  constructor(private _http:HttpClient) { }
+  constructor(private _http:HttpClient) 
+  { 
+    
+  }
 
   register(body:any){
     var Type="client";
