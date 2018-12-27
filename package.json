@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node expressapp/bin/wwww.js",
+    "start": "node /expressapp/bin/wwww.js",
     "build": "ng build --prod",
     "postinstall": "ng build --aot --prod",
     "test": "ng test",

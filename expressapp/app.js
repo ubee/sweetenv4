@@ -1,5 +1,6 @@
 var createError = require('http-errors');
-var express = require('express');
+//var express = require('express');
+const express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -10,12 +11,28 @@ var fileRouter = require('./routes/file');
 
 
 var cors= require('cors');
-var app = express();
+//var app = express();
+const app = express();
 
 app.use(cors({
   origin:['http://localhost:4200','http://127.0.0.1:4200','https://sweeten1.herokuapp.com'],
   credentials:true
 }));
+
+//Install express server
+//const express = require('express');
+//const http = require('http');
+const path = require('path');
+
+//const app = express();
+
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist'));
+
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/index.html'));
+});
 
 var mongoose =require('mongoose');
 
