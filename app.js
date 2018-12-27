@@ -1,13 +1,13 @@
-var createError = require('http-errors');
+//var createError = require('http-errors');
 //var express = require('express');
 const express = require('express');
-const path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+//const path = require('path');
+//var cookieParser = require('cookie-parser');
+//var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var fileRouter = require('./routes/file');
+//var indexRouter = require('./routes/index');
+//var usersRouter = require('./routes/users');
+//var fileRouter = require('./routes/file');
 
 // Database Connection
 var mongoose =require('mongoose');
@@ -16,13 +16,13 @@ var mongoose =require('mongoose');
 mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten',{useMongoClient:true});
 
 // On Connection
-mongoose.connection.on('connected', () => {
-    console.log('Connected to Database '+'mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten');
-  });
-  // On Error
-  mongoose.connection.on('error', (err) => {
-    console.log('Database error '+err);
-  });
+// mongoose.connection.on('connected', () => {
+//     console.log('Connected to Database '+'mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten');
+//   });
+//   // On Error
+//   mongoose.connection.on('error', (err) => {
+//     console.log('Database error '+err);
+//   });
 
 //mongodb://<dbuser>:<dbpassword>@ds037768.mlab.com:37768/sweeten
 
