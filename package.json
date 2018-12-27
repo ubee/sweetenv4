@@ -2,7 +2,6 @@
   "name": "now-ui-dashboard-angular",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "server.js",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",

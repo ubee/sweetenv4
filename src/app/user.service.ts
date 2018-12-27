@@ -36,21 +36,21 @@ export class UserService {
 
   register(body:any){
     var Type="client";
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/register',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/register',body,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
 
   check(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/check',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/check',body,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   getclientsProject()
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getclientProject'+`/${this.ViewProjectId}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getclientProject'+`/${this.ViewProjectId}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -58,7 +58,7 @@ export class UserService {
 }
 getProjectinfo(id:string)
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getProjectinfo'+`/${id}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getProjectinfo'+`/${id}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -66,7 +66,7 @@ getProjectinfo(id:string)
 }
 getclientsProject2()
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getclientProject2'+`/${this.ViewProjectId}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getclientProject2'+`/${this.ViewProjectId}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -74,56 +74,56 @@ getclientsProject2()
 }
 getclientsProject3()
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getclientProject3'+`/${this.ViewProjectId}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getclientProject3'+`/${this.ViewProjectId}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getAllProject1(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAllProject1',{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getAllProject1',{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getAllProject2(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAllProject2',{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getAllProject2',{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getAllProject3(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAllProject3',{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getAllProject3',{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getProject1(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getProject1'+`/${this.id1}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getProject1'+`/${this.id1}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getProject2(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getProject2'+`/${this.id2}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getProject2'+`/${this.id2}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getProject3(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getProject3'+`/${this.id3}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getProject3'+`/${this.id3}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getAssignedPId(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAssignedPId',{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getAssignedPId',{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -133,7 +133,7 @@ getAssignedPId(){
 
   ContractorRegister(body:any){
     var Type="contractor";
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/register'+`/${Type}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/register'+`/${Type}`,body,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
@@ -147,13 +147,13 @@ getAssignedPId(){
    this.contractorid=id;
   }
   getAssignedProjectId(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAssignedProjectId'+`/${this.contractorid}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getAssignedProjectId'+`/${this.contractorid}`,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   setRating(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/contractorRating'+`/${this.rating}`+`/${this.ratingid}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/contractorRating'+`/${this.rating}`+`/${this.ratingid}`,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
@@ -166,7 +166,7 @@ getAssignedPId(){
 
   }
   setProjectStatus(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/setProjectStatus'+`/${this.Assignid1}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/setProjectStatus'+`/${this.Assignid1}`,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
@@ -177,14 +177,14 @@ getAssignedPId(){
     this.cemail=cemail;
   }
   AssignProject(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/AssignProject'+`/${this.Assignid1}`+`/${this.cid}`+`/${this.cemail}`+`/${this.user_id}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/AssignProject'+`/${this.Assignid1}`+`/${this.cid}`+`/${this.cemail}`+`/${this.user_id}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   gettype(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/gettype',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/gettype',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -193,7 +193,7 @@ getAssignedPId(){
   
 
   login(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/login',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/login',body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -201,7 +201,7 @@ getAssignedPId(){
   }
 
   adminlogin(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/adminlogin',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/adminlogin',body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -221,7 +221,7 @@ getAssignedPId(){
    this.contractor_detail_id=id;
   }
   user(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/user',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/user',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -229,7 +229,7 @@ getAssignedPId(){
   }
 
   homerenovationinfo1(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/homerenovationinfo1',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/homerenovationinfo1',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -238,42 +238,42 @@ getAssignedPId(){
 
   getcDetail()
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getcDetail'+`/${this.contractor_detail_id}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getcDetail'+`/${this.contractor_detail_id}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 } 
  homerenovationinfo2(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/homerenovationinfo2',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/homerenovationinfo2',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   homerenovationinfo3(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/homerenovationinfo3',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/homerenovationinfo3',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   getpost1(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getpost1'+`/${this.editid}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getpost1'+`/${this.editid}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   getcinfo(id:string){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getcinfo'+`/${id}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getcinfo'+`/${id}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   getpost2(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getpost2'+`/${this.editid2}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getpost2'+`/${this.editid2}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -281,7 +281,7 @@ getAssignedPId(){
   }
 
   getpost3(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getpost3'+`/${this.editid3}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getpost3'+`/${this.editid3}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -289,21 +289,21 @@ getAssignedPId(){
   }
 
   getclients(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getclients',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getclients',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   getAllclients(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAllclients',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getAllclients',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   getAllcontractors(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getAllcontractors',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getAllcontractors',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -311,7 +311,7 @@ getAssignedPId(){
   }
 
   getcontractors(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getcontractors',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getcontractors',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -321,7 +321,7 @@ getAssignedPId(){
 
 
   logout(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/logout',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/logout',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -329,49 +329,49 @@ getAssignedPId(){
   }
 
   getinspirationphoto(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getinspirationphoto',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getinspirationphoto',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   getbeforephoto(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getbeforephoto',{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getbeforephoto',{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   post1(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/post1',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/post1',body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   post2(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/post2',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/post2',body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   post3(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/post3',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/post3',body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   verify(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/verify',body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/verify',body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   updatepost1(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/updatepost1'+`/${this.editid}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/updatepost1'+`/${this.editid}`,body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -379,14 +379,14 @@ getAssignedPId(){
   }
 
   updatepost2(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/updatepost2'+`/${this.editid}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/updatepost2'+`/${this.editid}`,body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   updatepost3(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/updatepost3'+`/${this.editid}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/updatepost3'+`/${this.editid}`,body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -394,7 +394,7 @@ getAssignedPId(){
   }
 
   deletepost1(id: string){
-    return this._http.delete('https://sweeten1.herokuapp.com:3000/users/deletepost1'+`/${id}`,{
+    return this._http.delete('https://sweeten1.herokuapp.com/users/deletepost1'+`/${id}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -402,14 +402,14 @@ getAssignedPId(){
   }
 
   deletepost2(id: string){
-    return this._http.delete('https://sweeten1.herokuapp.com:3000/users/deletepost2'+`/${id}`,{
+    return this._http.delete('https://sweeten1.herokuapp.com/users/deletepost2'+`/${id}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     })
   }
   deletepost3(id: string){
-    return this._http.delete('https://sweeten1.herokuapp.com:3000/users/deletepost3'+`/${id}`,{
+    return this._http.delete('https://sweeten1.herokuapp.com/users/deletepost3'+`/${id}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -426,28 +426,28 @@ getAssignedPId(){
   }
 
   savetodolist(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/savetodolist'+`/${this.getTDid}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/savetodolist'+`/${this.getTDid}`,body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   updatetodolist(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/updatetodolist'+`/${this.getTDid}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/updatetodolist'+`/${this.getTDid}`,body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   saveBacktodolist(body:any){
-    return this._http.post('https://sweeten1.herokuapp.com:3000/users/saveBacktodolist'+`/${this.getTDid}`,body,{
+    return this._http.post('https://sweeten1.herokuapp.com/users/saveBacktodolist'+`/${this.getTDid}`,body,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
   getTodolist(){
-    return this._http.get('https://sweeten1.herokuapp.com:3000/users/getTodolist'+`/${this.getTDid}`,{
+    return this._http.get('https://sweeten1.herokuapp.com/users/getTodolist'+`/${this.getTDid}`,{
       observe:'body',
       withCredentials:true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -458,7 +458,7 @@ getAssignedPId(){
   }
   postBusiness(body:any)
 {
-  return this._http.post('https://sweeten1.herokuapp.com:3000/users/postBusiness',body,{
+  return this._http.post('https://sweeten1.herokuapp.com/users/postBusiness',body,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -466,14 +466,14 @@ getAssignedPId(){
 }
 getBusinessProject()
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getBusinessProject',{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getBusinessProject',{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 getBR(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getBR'+`/${this.beditid}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getBR'+`/${this.beditid}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -481,21 +481,21 @@ getBR(){
 }
 getBusinessRenovationProject()
 {
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getBusinessRenovationProject',{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getBusinessRenovationProject',{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 deleteBusiness(id: string){
-  return this._http.delete('https://sweeten1.herokuapp.com:3000/users/deleteBusiness'+`/${id}`,{
+  return this._http.delete('https://sweeten1.herokuapp.com/users/deleteBusiness'+`/${id}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
   })
 }
 updateBusiness(body:any){
-  return this._http.post('https://sweeten1.herokuapp.com:3000/users/updateBusiness'+`/${this.beditid}`,body,{
+  return this._http.post('https://sweeten1.herokuapp.com/users/updateBusiness'+`/${this.beditid}`,body,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
@@ -508,7 +508,7 @@ setViewBusinessProjectId(id:string){
 this.vbid=id;
 }
 getBusinessProject1(){
-  return this._http.get('https://sweeten1.herokuapp.com:3000/users/getBusinessProject1'+`/${this.vbid}`,{
+  return this._http.get('https://sweeten1.herokuapp.com/users/getBusinessProject1'+`/${this.vbid}`,{
     observe:'body',
     withCredentials:true,
     headers:new HttpHeaders().append('Content-Type','application/json')
