@@ -2,9 +2,10 @@
   "name": "now-ui-dashboard-angular",
   "version": "1.0.0",
   "license": "MIT",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "node /expressapp/bin/wwww.js",
+    "start": "node app",
     "build": "ng build --prod",
     "postinstall": "ng build --aot --prod",
     "test": "ng test",
