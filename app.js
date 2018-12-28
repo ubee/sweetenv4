@@ -1,6 +1,6 @@
 //var createError = require('http-errors');
 //var express = require('express');
-const express = require('express');
+//const express = require('express');
 //const path = require('path');
 //var cookieParser = require('cookie-parser');
 //var logger = require('morgan');
@@ -10,10 +10,10 @@ const express = require('express');
 //var fileRouter = require('./routes/file');
 
 // Database Connection
-var mongoose =require('mongoose');
+//var mongoose =require('mongoose');
 
 //mongoose.connect('mongodb://localhost/Sweeten');
-mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten',{useMongoClient:true});
+//mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten',{useMongoClient:true});
 
 // On Connection
 // mongoose.connection.on('connected', () => {
@@ -27,39 +27,39 @@ mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten'
 //mongodb://<dbuser>:<dbpassword>@ds037768.mlab.com:37768/sweeten
 
 
-const cors= require('cors');
-const app = express();
+// const cors= require('cors');
+// const app = express();
 
-const port = process.env.PORT || 8080;
-app.set('port', port);
+// const port = process.env.PORT || 8080;
+// app.set('port', port);
 
 
-app.use(cors());
+// app.use(cors());
 
 //Install express server
 
-const path = require('path');
+// const path = require('path');
 
 
 //passport
-var passport = require('passport');
-var session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
-app.use(session({
-  name:'myname.sid',
-  resave:false,
-  saveUninitialized:false,
-  secret:'secret',
-  cookie:{
-    maxAge:36000000,
-    httpOnly:false,
-    secure:false
-  },
-  store: new MongoStore({ mongooseConnection: mongoose.connection })
-}));
-require('./passport-config');
-app.use(passport.initialize());
-app.use(passport.session());
+// var passport = require('passport');
+// var session = require('express-session');
+// const MongoStore = require('connect-mongo')(session);
+// app.use(session({
+//   name:'myname.sid',
+//   resave:false,
+//   saveUninitialized:false,
+//   secret:'secret',
+//   cookie:{
+//     maxAge:36000000,
+//     httpOnly:false,
+//     secure:false
+//   },
+//   store: new MongoStore({ mongooseConnection: mongoose.connection })
+// }));
+// require('./passport-config');
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 
 // view engine setup
@@ -95,12 +95,35 @@ app.use(passport.session());
 // });
 
 // Serve only the static files form the dist directory
+// app.use(express.static(__dirname + '/dist'));
+
+// app.get('/*', function(req,res) {
+    
+// res.sendFile(path.join(__dirname+'/dist/index.html'));
+// });
+
+// const server = http.createServer(app);
+// server.listen(port, () => console.log('running'));
+// Start the app by listening on the default Heroku port
+////////////////////////////////////////////////////////////////////
+
+//Install express server
+const express = require('express');
+const http = require('http');
+const path = require('path');
+
+const app = express();
+
+// Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist'));
 
 app.get('/*', function(req,res) {
     
 res.sendFile(path.join(__dirname+'/dist/index.html'));
 });
+
+const port = process.env.PORT || 8080;
+app.set('port', port);
 
 const server = http.createServer(app);
 server.listen(port, () => console.log('running'));
