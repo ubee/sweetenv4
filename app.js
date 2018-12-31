@@ -10,19 +10,19 @@
 //var fileRouter = require('./routes/file');
 
 // Database Connection
-//var mongoose =require('mongoose');
+var mongoose =require('mongoose');
 
 //mongoose.connect('mongodb://localhost/Sweeten');
-//mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten',{useMongoClient:true});
+mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten',{useMongoClient:true});
 
 // On Connection
-// mongoose.connection.on('connected', () => {
-//     console.log('Connected to Database '+'mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten');
-//   });
-//   // On Error
-//   mongoose.connection.on('error', (err) => {
-//     console.log('Database error '+err);
-//   });
+mongoose.connection.on('connected', () => {
+    console.log('Connected to Database '+'mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten');
+  });
+  // On Error
+  mongoose.connection.on('error', (err) => {
+    console.log('Database error '+err);
+  });
 
 //mongodb://<dbuser>:<dbpassword>@ds037768.mlab.com:37768/sweeten
 
