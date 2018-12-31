@@ -13,7 +13,7 @@
 const mongoose =require('mongoose');
 
 //mongoose.connect('mongodb://localhost/Sweeten');
-mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten',{useMongoClient:true});
+mongoose.connect('mongodb://zara:Allahiloveyou1@ds037768.mlab.com:37768/sweeten');
 
 // On Connection
 // mongoose.connection.on('connected', () => {
