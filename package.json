@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "ng": "ng",
-    "start": "node app.js",
     "build": "ng build --prod",
     "postinstall": "ng build --aot --prod",
     "test": "ng test",
